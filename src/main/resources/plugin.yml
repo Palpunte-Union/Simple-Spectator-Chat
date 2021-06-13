@@ -1,0 +1,8 @@
+name: SimpleSpectatorChat
+version: @version@
+main: com.github.eighty88.specchat.SimpleSpectatorChat
+api-version: 1.13
+softdepend: [ LunaChat ]
+authors: [ eight_y_88 ]
+description: Simple Spectator Chat
+website: https://github.com/Palpunte-Union
