@@ -36,7 +36,7 @@ public final class SimpleSpectatorChat extends JavaPlugin implements Listener {
                 "|   " + this.getDescription().getWebsite(),
                 "|  For 1.13+                      ",
                 "|                                 ",
-                "|==========================="
+                "|================================="
         ));
 
         Plugin lc = Bukkit.getPluginManager().getPlugin("LunaChat");
@@ -78,7 +78,7 @@ public final class SimpleSpectatorChat extends JavaPlugin implements Listener {
         } else if(lunaChatEnable) {
             if (e.getPlayer().getGameMode() == GameMode.SPECTATOR) {
                 if(bytes) {
-                    message = specPattern.replace("%Name%", e.getPlayer().getName()).replace("%Message%", LunaChat.getAPI().japanize(e.getMessage(), JapanizeType.GOOGLE_IME)).replace("%Sub%", e.getMessage());
+                    message = specPattern.replace("%Name%", e.getPlayer().getName()).replace("%Message%", LunaChat.getAPI().japanize(e.getMessage(), JapanizeType.GOOGLE_IME)).replace("%Sub%", " (" + e.getMessage() + ")");
                 } else {
                     message = specPattern.replace("%Name%", e.getPlayer().getName()).replace("%Message%", e.getMessage()).replace("%Sub%", "");
                 }
